@@ -1,0 +1,31 @@
+This file is used for test purpose for HelpDesk:
+SolarWinds: SolarWinds is a monitoring tool which is used to monitor network devices such switch, hub routers etc.
+            We can check the status of the network devices whether it is up or down. In case if any new device is 
+            installed in the environment, then we need to add them here in the SolarWinds using "Nodes" feature.
+            We will get a Service Now ticket from Network team where everything is mentioned about that new device
+            such as ip address, location, model name, hostname, router series etc. We need to add all details there
+            while creating Nodes. Here in the Solarwinds dashboard, we will see router details locationwise.
+            Let suppose, if we open Gurgaon location device, we will be able to see all the devices which is
+            installed in Gurgaon location. In case any router is down and unable to login there, we will get
+            "OpenGear" device which is connected to all devices in that location and give us the way of backdoor
+            login.    
+
+
+DataDog:    Datadog is used to monitor servers such as File Server, Printing server etc. We are able to see all the
+            details about the server such as where it is created, running on which OS, DataDog Version, CPU cores,
+            ip address, Memory etc. There are 2 type of tags available: Python Tags and Application Owner tags    
+            (vspere). With the help of these tags, we will be able to see attributes like app contact, app 
+            environment, Business Units, functions etc. With the help of DataDog, we can check when the server goes 
+            down and for what time and according to this, an alert email gets triggered. We need to communicate with the
+            server poc to fix it. 
+
+CatchPoint: CatchPoint is used to monitor the applications which is running on the server. Here scripts will be created in 
+            selenium language where automatic bots goes to the application and perform the automatic tasks. Each steps has
+            been written in the scripts and automatic bots perform the tasks as per the scripts. For example, if we want to 
+            test Gartner.com website in every 5 minutes, it will be boring process for human to go to Gartner.com login
+            page> Enter the credentials> login there> and check all the tabs and pages in such short time. So we can 
+            eliminate this human efforts with the scripts. We can create a scripts in Cachpoint and define each and every
+            steps along with the credentials so that bots can run the scripts automatically and monitor the application
+            response behavior. If the response time exceed the threesold time, it will give us an alert. We can check 
+            where it fails using the FilmStrips.
+
